@@ -100,6 +100,7 @@
             <p class="card-text">bla bla bla bla.....Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
             <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#editarPublicacion"> Editar</button>
             <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#agregarComentario">Comentar</button>
+           <button type="button" class="btn btn-outline-danger">Eliminar</button>
         </div>
       </div>
      
@@ -166,15 +167,16 @@
 
 <!-- Modal -->
 <div class="modal fade" id="editarPublicacion" tabindex="-1" role="dialog" aria-labelledby="editarPublicacion" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title"">Editar publicacion</h5>
+        <h5 class="modal-title"">Agregar publicacion</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
+
          <div class="form-group">
         <label for="exampleFormControlTextarea1">Titulo</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
@@ -182,6 +184,11 @@
         <div class="form-group">
         <label for="exampleFormControlTextarea1">Detalle</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div> 
+        <div class="form-group">
+          <label for="exampleInputEmail1">Publicar en fecha</label>
+          <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="">
+          <small id="emailHelp" class="form-text text-muted">Ingrese una fecha para que se publique esta publicacion</small>
         </div>
 
         <div class="form-check">
