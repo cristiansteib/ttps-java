@@ -41,8 +41,24 @@
                 </div>
             </li>
         </ul>
+
+        <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown hidden-md-down">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i> Usuario
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/modulo/usuarios/configuracion"><i class="fas fa-cogs"></i> Configuraci&oacute;n</a>
+              <div class="dropdown-divider"></div>
+              <a href="/auth/logout" class="dropdown-item">
+                <i class="fas fa-sign-out-alt"></i> Cerrar sesion
+              </a>
+          </div>
+        </li>
+      </ul>
     </div>
 </nav>
+
 
 <div class="container-fluid" style="margin-top:30px">
   <div class="row">
@@ -82,8 +98,8 @@
             <h3><hr></h3>
             <p class="card-text">alguna descripcion.</p>
             <p class="card-text">bla bla bla bla.....Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-            <button type="button" class="btn btn-outline-primary">Editar</button>
-            <button type="button" class="btn btn-outline-primary">Comentar</button>
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#editarPublicacion"> Editar</button>
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#agregarComentario">Comentar</button>
         </div>
       </div>
      
@@ -144,6 +160,75 @@
     </div> <!------ END CARTELERA ----->
   </div>
 </div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="editarPublicacion" tabindex="-1" role="dialog" aria-labelledby="editarPublicacion" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"">Editar publicacion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <div class="form-group">
+        <label for="exampleFormControlTextarea1">Titulo</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+        </div>
+        <div class="form-group">
+        <label for="exampleFormControlTextarea1">Detalle</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+  <label class="form-check-label" for="defaultCheck1">
+    Habilitar comentarios
+  </label>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="agregarComentario" tabindex="-1" role="dialog" aria-labelledby="agregarComentario" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Comentar publicacion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+        <label for="exampleFormControlTextarea1">Escribe un comentario</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 
 <div class="jumbotron text-center" style="margin-bottom:0">
   <p>Footer</p>
