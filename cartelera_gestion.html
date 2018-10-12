@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="/resources/js/validations.js"></script>
+    <script src="/resources/js/app.js?v=1.40.0"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/resources/css/style.css?v=1.9">
+    <link rel='shortcut icon' type='image/x-icon' href="/resources/favicon.ico"/>
+    <link rel="stylesheet" href="/resources/vendor/css/jquery.multiselect.css">
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script  src="/resources/vendor/js/jquery.multiselect.js"></script>
+    <script  src="https://cdn.jsdelivr.net/npm/bootstrap-confirmation2@4.0.1/dist/bootstrap-confirmation.min.js"></script>
+</head>
+
+<body class="">
+<header class="mb-3">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Carteleras</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            administracion
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Gestion de carteleras</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Gestion de usuarios</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="container-fluid" style="margin-top:30px">
+    <div class="row">
+        <div class="col-sm-2">
+     
+        </div>
+        <div class="col-sm-8">
+          <div class="row mb-5">
+            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#agregarCartelera"> Agregar cartelera</button>
+          </div>
+            <h5>Lista de carteleras:</h5>
+
+
+         </div>
+</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="agregarCartelera" tabindex="-1" role="dialog" aria-labelledby="agregarCartelera" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Agregar cartelera</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="form-group">
+        <label for="exampleFormControlTextarea1">Titulo</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+        </div>
+        <div class="form-group">
+        <label for="exampleFormControlTextarea1">Descripcion</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="form-group">
+
+      <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#agregarCartelera"> Agregar Usuario</button>
+</div>
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
